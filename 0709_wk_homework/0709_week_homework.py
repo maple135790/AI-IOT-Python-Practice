@@ -49,7 +49,7 @@ for p in range(1,pages+1):
 article =list()
 log =list()
 pageListSel ='#pageptlist > div > div > div > div > div'
-for su in srcUrls[:2]:
+for su in srcUrls:
     curSrcHtml =requests.get(su).text
     curSrcSoup =bs(curSrcHtml,"html.parser")
     pageList =curSrcSoup.select(pageListSel)
