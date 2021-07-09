@@ -1,2 +1,6 @@
+.vscode
 0706/json/*
-
+0709_wk_homework/SimHei.ttf
+0709_wk_homework/*.db
+0709_wk_homework/*.db-journal
+*.log
