@@ -1,6 +1,6 @@
 # Usage
 - 執行 0709_wk_homework.py，請用vscode、spyder 等不是server-base 的ide
-- 執行 0709_week_homework.ipynb 就用jupyter notebook
+- 執行 0709_week_homework.ipynb 請用jupyter notebook
 
 ### 需自行補齊的檔案:
 - SimHei.ttf
