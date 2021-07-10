@@ -85,6 +85,7 @@ for a in article:
 
 db =conn.execute('SELECT context FROM news')
 contexts =db.fetchall()
+db.close()
 
 data =list()
 for c in contexts:
