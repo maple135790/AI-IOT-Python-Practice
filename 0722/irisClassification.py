@@ -18,7 +18,7 @@ class Bias:
     versicolor = -0.0089
     virginica = 1.00879
 
-X = [float(input('>> ')),  float(input('>> ')),
+X = [float(input('>> ')), float(input('>> ')),
      float(input('>> ')), float(input('>> '))]
 
 hiddenNodes = list()
