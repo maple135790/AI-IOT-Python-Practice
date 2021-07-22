@@ -1,0 +1,55 @@
+<html>
+
+<head>
+  <script>
+    function predict() {
+      first = document.getElementById("first");
+      x1 = parseFloat(first.value);
+      second = document.getElementById("second");
+      x2 = parseFloat(second.value);
+      third = document.getElementById("third");
+      x3 = parseFloat(third.value);
+      fourth = document.getElementById("fourth");
+      x4 = parseFloat(fourth.value);
+      y = (0.05697936) * x1 + 0.33639503 * x2 - 0.40626179 * x3 - 0.57570033 * x4 + 0.2605931534392774;
+      if (y >= 0) {
+        z = "setosa";
+      }
+      else {
+        z = "versicolor";
+      }
+      result = document.getElementById("result");
+      result.innerHTML = "所要分類的結果是 " + z + "。";
+    }
+  </script>
+</head>
+
+<body bgcolor=#aaaa00>
+  <center>
+    <H1>這是一個 鳶尾花AI分類器 的網頁應用程式</H1>
+    <form>
+      請輸入x1的值：
+      <input type="text" id="first" name="x1" />
+      <p>
+        請輸入x2的值：
+        <input type="text" id="second" name="x2" />
+      <p>
+        請輸入x3的值：
+        <input type="text" id="third" name="x3" />
+      <p>
+        請輸入x4的值：
+        <input type="text" id="fourth" name="x4" />
+      <p>
+        <input type="button" value="分類" onClick="predict();" />
+    </form>
+    <p>
+    <div style="background-color:#e49e9e;border: solid;width:20%;height:50px; " id="result">
+      Result will be shown here.
+    </div>
+    <p>
+      <img src="test.png" width="500" height="500"/> <br><br><br>
+      <hr>
+  </center>
+</body>
+
+</html>
