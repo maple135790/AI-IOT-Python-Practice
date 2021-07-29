@@ -18,8 +18,10 @@ class Bias:
     versicolor = -0.0089
     virginica = 1.00879
 
-X = [float(input('>> ')), float(input('>> ')),
-     float(input('>> ')), float(input('>> '))]
+X = [float(input('>> ')), 
+     float(input('>> ')),
+     float(input('>> ')), 
+     float(input('>> '))]
 
 hiddenNodes = list()
 hn1R = 0
@@ -40,6 +42,8 @@ for i in range(len(hiddenNodes)):
 setosa = sigmoid(seR+Bias.setosa)
 versicolor = sigmoid(veR+Bias.versicolor)
 virginica = sigmoid(viR+Bias.virginica)
+
+print()
 
 if max([setosa, versicolor, virginica]) == setosa:
     print('setosa')

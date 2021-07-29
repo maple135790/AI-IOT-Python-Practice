@@ -3,7 +3,7 @@ import numpy
 from sklearn import linear_model
 from sklearn.metrics import classification_report, confusion_matrix
 
-df = pandas.read_csv("irisTwoClass.csv")
+df = pandas.read_csv(".\\0722\\irisTwoClass.csv")
 
 X = df[['SL', 'SW', 'PL', 'PW']]
 y = df['Species']

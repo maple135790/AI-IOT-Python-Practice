@@ -4,7 +4,7 @@ from sklearn import linear_model
 from sklearn.metrics import r2_score #
 import matplotlib.pyplot as plt
 
-df = pandas.read_csv("classdata2.csv")
+df = pandas.read_csv(".\\0722\\classdata2.csv")
 
 X = df[['x1', 'x2']]
 y = df['Class']
