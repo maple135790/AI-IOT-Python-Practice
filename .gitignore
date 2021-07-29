@@ -4,3 +4,4 @@
 0709_wk_homework/*.db
 0709_wk_homework/*.db-journal
 *.log
+*/__pycache__/*
